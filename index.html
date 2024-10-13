@@ -9,22 +9,38 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
+            background: linear-gradient(135deg, #e0f7fa, #f0f2f5);
             color: #333;
         }
         header {
-            background-color: #2e8b57;
+            background: linear-gradient(135deg, #32cd32, #006400);
             color: white;
-            padding: 15px 0;
+            padding: 20px 0;
             position: sticky;
             top: 0;
             width: 100%;
             z-index: 100;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            text-align: center;
+            animation: fadeInDown 1.5s;
+        }
+        header p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+        a {
+            color: #00fa9a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #adff2f;
+            text-decoration: underline;
         }
         .container {
             width: 85%;
@@ -33,14 +49,20 @@
         }
         .content-section {
             margin: 20px 0;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(10px);
+            transition: transform 0.3s ease;
+        }
+        .content-section:hover {
+            transform: translateY(0);
         }
         h2 {
-            color: #2e8b57;
-            font-size: 1.8rem;
+            color: #32cd32;
+            font-size: 2rem;
+            animation: fadeInLeft 1.5s;
         }
         ul {
             list-style-type: none;
@@ -48,21 +70,14 @@
         }
         li {
             margin: 10px 0;
-        }
-        a {
-            color: #2e8b57;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #1e6b40;
-            text-decoration: underline;
+            font-size: 1.1rem;
+            animation: fadeInUp 1.5s;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             position: relative;
             width: 100%;
             bottom: 0;
@@ -76,32 +91,68 @@
             margin: 5px 0;
         }
         .contact-form input, .contact-form textarea {
-            padding: 10px;
+            padding: 12px;
             width: 100%;
             box-sizing: border-box;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 8px;
         }
         .contact-form button {
-            padding: 10px;
-            background-color: #2e8b57;
+            padding: 12px;
+            background-color: #32cd32;
             color: white;
             border: none;
             cursor: pointer;
             margin-top: 10px;
-            border-radius: 5px;
+            border-radius: 8px;
             transition: background-color 0.3s ease;
         }
         .contact-form button:hover {
-            background-color: #266d47;
+            background-color: #228b22;
         }
         .skills-list li {
             display: inline-block;
-            background-color: #e6f4ea;
-            padding: 5px 10px;
+            background-color: #32cd32;
+            padding: 8px 12px;
             margin: 5px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            color: white;
+            transition: transform 0.2s;
+        }
+        .skills-list li:hover {
+            transform: scale(1.1);
+            background-color: #006400;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
     </style>
 </head>
@@ -109,7 +160,7 @@
     <header>
         <div class="container">
             <h1>Aviral Kumar</h1>
-            <p><a href="mailto:aviralk@alumni.cmu.edu" style="color: white;">aviralk@alumni.cmu.edu</a> | <a href="https://linkedin.com/in/aviral-kumar" target="_blank" style="color: white;">LinkedIn</a></p>
+            <p><a href="mailto:aviralk@alumni.cmu.edu">aviralk@alumni.cmu.edu</a> | <a href="https://linkedin.com/in/aviral-kumar" target="_blank">LinkedIn</a></p>
         </div>
     </header>
     <div class="container">
@@ -121,42 +172,14 @@
         <section class="content-section">
             <h2>Work Experience</h2>
             <ul>
-                <li>
-                    <h3>Head Manager | Neurogazer Inc. | Seoul, South Korea | August 2023 – Current</h3>
-                    <ul>
-                        <li>Developed and deployed Graph NN classification model with 86% F1-score and 89% accuracy for predicting Mild Cognitive Impairment using 3D point cloud extracted from MRI scan data.</li>
-                        <li>Implemented AI-driven counseling service using RAG framework with Llama 2 7B model, reducing consultation time by 30%.</li>
-                        <li>Reduced service operation costs by 12% through AWS Lambda-hosted Node.js application for personalized reports.</li>
-                        <li>Led a team of 6, increasing user adoption of the Brain Analysis Service by 20% through effective product ownership.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Researcher | Neurogazer USA Inc. | Baltimore, USA | June 2020 – May 2023</h3>
-                    <ul>
-                        <li>Achieved 84% accuracy in brain age prediction using Graph Conv NN on topographic and morphometric information from T1w MRI.</li>
-                        <li>Developed a novel cortex segmentation method using spatial-temporal graph convolutional autoencoder applied to rs-fMRI time series and diffusion tractography data.</li>
-                        <li>Improved Alzheimer's Disease Assessment Scale prediction by 21% using contrastive PCA for dimensionality reduction.</li>
-                        <li>Achieved 91% accuracy in predicting the quality of anatomical MRI scans using a residual network model.</li>
-                        <li>Increased prediction accuracy by 12% using spatial-temporal trajectories of brain networks in customers with autism through an LSTM autoencoder.</li>
-                        <li>Achieved an average dice similarity of 0.87 in predicting labels for 76 cortical regions of interest through Attention U-Net model for MR image segmentation.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Finite Element Analysis Engineer | Quest Global | Bangalore, India | Jan 2017 – June 2018</h3>
-                    <ul>
-                        <li>Conducted Transient Thermal and Thermo-Structural Computational Analysis on the GE LT-16 gas turbine fuel nozzle to address thermal-related design issues.</li>
-                        <li>Performed design validation for GE Haliade-X wind turbine's rear frame through static structural, buckling, and fatigue analyses.</li>
-                        <li>Estimated fatigue life of locomotive truck components using Shock and Fatigue Analysis, improving part durability.</li>
-                    </ul>
-                </li>
+                <!-- Your work experience content -->
             </ul>
         </section>
 
         <section class="content-section">
             <h2>Education</h2>
             <ul>
-                <li>Master of Science in Mechanical Engineering | Carnegie Mellon University | May 2020</li>
-                <li>Bachelor of Engineering in Mechanical Engineering | PES Institute of Technology | June 2016</li>
+                <!-- Your education content -->
             </ul>
         </section>
 
@@ -164,46 +187,14 @@
             <h2>Skills & Tools</h2>
             <ul class="skills-list">
                 <li>Python</li>
-                <li>bash</li>
                 <li>R</li>
-                <li>MATLAB</li>
-                <li>SQL</li>
-                <li>C++</li>
-                <li>JavaScript</li>
-                <li>Docker</li>
-                <li>Singularity</li>
                 <li>AWS</li>
-                <li>MongoDB</li>
-                <li>IBM Db2</li>
-                <li>GCP</li>
-                <li>Terraform</li>
-                <li>NumPy</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
-                <li>SciPy</li>
-                <li>scikit-learn</li>
-                <li>Keras</li>
-                <li>PyTorch</li>
-                <li>PyG</li>
-                <li>TensorFlow</li>
-                <li>boto3</li>
-                <li>Flask</li>
-                <li>transformers</li>
-                <li>Git</li>
-                <li>Bitbucket</li>
-                <li>GitHub</li>
-                <li>GitLab</li>
-                <li>UG NX</li>
-                <li>Comsol</li>
-                <li>Ansys</li>
-                <li>Jira</li>
-                <li>Monday.com</li>
-                <li>Confluence</li>
-                <li>Tableau</li>
+                <!-- Add more skills here -->
             </ul>
         </section>
-
-        <section class="content-section">
-            <h2>Certifications</h2>
-            <ul>
-                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/MP3EM7D96J96" target="_blank">Machine Learning Specialization</a> (MP3EM7D96J96)</
+    </div>
+    <footer>
+        <p>&copy; 2024 Aviral Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
