@@ -52,6 +52,26 @@ nav ul li a {
     padding: 0 20px;
 }
 
+#publications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#publications ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#publications ul li a {
+    color: #0f1e4a;
+    text-decoration: none;
+}
+
+#publications ul li a:hover {
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     background: #333;
@@ -59,3 +79,4 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
