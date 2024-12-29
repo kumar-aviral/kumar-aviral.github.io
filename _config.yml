@@ -21,11 +21,11 @@ repository               : "kumar-aviral/kumar-aviral.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile_picture.jpg"
   name             : #""
   pronouns         : # example: "she/her"  
   bio              : "Developing AI for Scientific Discovery"
-  location         : "Earth"
+  location         : "Earth, Solar System, Milky Way"
   employer         : "Neurogazer Inc."
   uri              : # URL
   email            : "aviralk@alumni.cmu.edu" 
