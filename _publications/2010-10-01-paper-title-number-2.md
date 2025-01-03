@@ -1,14 +1,16 @@
 ---
-title: "Paper Title Number 2"
+title: "Computational Study on the Effect of Thermal Boundary Conditions and Axial Aspect Ratio on Catalytic Oxidative Coupling of Methane"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/2023-12-01-computational-study-catalytic-oxidative-coupling
+excerpt: 'This paper examines the impact of thermal boundary conditions and axial aspect ratio on catalytic oxidative coupling of methane, providing valuable insights into natural gas conversion processes.'
+date: 2023-12-01
+venue: 'Industrial & Engineering Chemistry Research'
+slidesurl: ''
+paperurl: 'https://doi.org/10.1021/acs.iecr.3c02285'
+citation: 'Wadkar, C., Kumar, A., et al. (2023). &quot;Computational Study on the Effect of Thermal Boundary Conditions and Axial Aspect Ratio on Catalytic Oxidative Coupling of Methane.&quot; <i>Industrial & Engineering Chemistry Research</i>. 62(46), 19907-19919.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This paper investigates the influence of thermal boundary conditions and axial aspect ratio on catalytic oxidative coupling of methane. By employing computational fluid dynamics (CFD) simulations, the study provides critical insights into optimizing methane conversion processes.
+
+For more details, visit the paper [here](https://doi.org/10.1021/acs.iecr.3c02285).
