@@ -1,14 +1,16 @@
 ---
-title: "Paper Title Number 1"
+title: "Coordinated Anatomical and Functional Variability in the Human Brain During Adolescence"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2023-04-01-coordinated-anatomical-functional-variability
+excerpt: 'This paper explores the coordinated anatomical and functional variability in the human brain during adolescence, revealing insights into developmental changes.'
+date: 2023-04-01
+venue: 'Human Brain Mapping'
+slidesurl: ''
+paperurl: 'https://doi.org/10.1002/hbm.26173'
+citation: 'Bero, J., Kumar, A., et al. (2023). &quot;Coordinated Anatomical and Functional Variability in the Human Brain During Adolescence.&quot; <i>Human Brain Mapping</i>. 44(4), 1767–1778.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This paper investigates the coordinated anatomical and functional variability in the human brain during adolescence. The study provides new insights into how developmental processes impact brain structure and function.
+
+For further details, visit the paper [here](https://doi.org/10.1002/hbm.26173).
